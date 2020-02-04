@@ -14,6 +14,7 @@ dir.output = dir.home + dir.subfolder + 'clean'
 
 // clean the output folder
 function clean() {
+	// force needed to delete outside of repo
 	return del([ dir.output ], { force: true })
 }
 
