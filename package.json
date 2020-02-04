@@ -2,10 +2,9 @@
 	"name": "svg-watch",
 	"version": "0.1.0",
 	"description": "Watch a folder for SVGs and run svgo on them.",
-	"main": "index.js",
+	"main": "gulpfile.js",
 	"scripts": {
-		"start": "gulp",
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"start": "gulp"
 	},
 	"author": "Momentum Dash",
 	"license": "ISC",
@@ -13,5 +12,6 @@
 		"del": "^5.1.0",
 		"gulp": "^4.0.2",
 		"gulp-svgo": "^2.1.1"
-	}
+	},
+	"repository": "github:momentumdash/svg-watch"
 }
