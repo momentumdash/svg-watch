@@ -7,7 +7,7 @@ const svgo = require('gulp-svgo')
 // set up input/output folders
 let dir = {
 	home: require('os').homedir(),
-	subfolder: '/Downloads/svg/'
+	subfolder: '/Downloads/'
 }
 dir.input = dir.home + dir.subfolder + '*.svg'
 dir.output = dir.home + dir.subfolder + 'clean'
@@ -18,7 +18,7 @@ function clean() {
 	return del([ dir.output ], { force: true })
 }
 
-// clean the svgs
+// minify the svgs
 function prepareSvg() {
 	return src(dir.input)
 		.pipe(svgo())
