@@ -20,7 +20,7 @@ function clean() {
 
 // clean the svgs
 function prepareSvg() {
-	return src( dir.input )
+	return src(dir.input)
 		.pipe(svgo())
 		.pipe(dest(dir.output))
 }
